@@ -254,19 +254,10 @@ main {
 
    
 @media(max-width: 420px){
-  
-/* Estilos gerais para o site */
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
+    /* Estilos gerais para o site */
 header {
-    background-color: #222;
-    color: #fff;
+    background-color: rgb(255, 241, 241)
+    color:#fff;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
@@ -477,3 +468,6 @@ section {
     }
 }
 }
+  
+
+
