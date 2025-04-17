@@ -64,6 +64,72 @@ header {
     }
 
     P {
+        color: #000;* {
+    margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Metamorphous&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Reggae+One&family=Roboto:ital,wght@0,100..900;1,100..900&family=Uncial+Antiqua&display=swap');
+
+
+body {
+    background-color: rgb(27, 0, 0);
+    color: rgb(255, 255, 255);
+
+}
+
+header {
+    background: rgb(255, 241, 241);
+    width: 100%;
+    height: 100px;
+    box-shadow: 0 0 40px #8a0049;
+
+}
+
+
+
+img {
+
+    width: 200px;
+    /* Define a largura por pixels */
+    height: 200px;
+    /* Define a altura por pixels */
+    float: left;
+    transform: scale(0.8);
+    /* Reduz a imagem para 50% do seu tamanho original */
+    margin-top: -50px;
+
+
+}
+
+
+/*roda-pe*/
+
+.footer {
+    background: rgb(255, 241, 241);
+    box-shadow: 0 0 40px #8a0049;
+    padding: 1px 0px;
+    margin-top: 5%;
+
+    img {
+        transform: scale(0.8);
+        width: 300px;
+        /* Define a largura por pixels */
+        height: 300px;
+        /* Define a altura por pixels */
+        float: none;
+    }
+
+    .redes {
+        a {
+            color: #ffffff;
+            font-size: 1.3em;
+            text-decoration: none;
+            margin-top: 100%;
+
+        }
+    }
+
+    P {
         color: #000;
         text-align: center;
 
@@ -124,11 +190,21 @@ nav {
         margin: 20px;
     }
 
-    h1 {
-        font-size: 120px;
+    h1,
+    h2 {
+        font-size: 100px;
         font-family: "Eagle Lake", serif;
         text-align: center;
+        margin: 15px;
+        letter-spacing: 0.1em;
+        text-shadow: 2px 2px 4px #ee1616;
+        /* Sombra simples */
 
+    }
+
+    h2 {
+        font-size: 50px;
+        letter-spacing: 0.1em;
     }
 
     p {
@@ -136,60 +212,132 @@ nav {
         font-size: 15px;
         text-align: center;
     }
+}
+
+.galeria {
+    box-shadow: 0 0 20px pink;
+    font-size: 55px;
+}
+
+
+
+.item {
+    text-align: center;
+    /* Opcional: Centraliza o texto e a imagem */
+    margin-bottom: 15px;
+    /* Opcional: Espaço entre os itens */
+}
+
+.item h1 {
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    /* Opcional: Espaço entre o texto e a imagem */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.item img {
+    display: block;
+    /* Força a imagem a ocupar a largura total e ir para a próxima linha */
+
+
+    height: auto;
+    /* Mantém a proporção */
+    margin: 0 auto;
+    /* Opcional: Centraliza a imagem horizontalmente */
+}
+
+.imagem {
+    display: flex;
+    /* Define o contêiner como um flex container */
+
+    align-items: center;
+    /* Centraliza as imagens horizontalmente */
+    /* align-items: flex-start; /* Alinha as imagens à esquerda */
+    /* align-items: flex-end; /* Alinha as imagens à direita */
+    vertical-align: top;
 
 
 }
+
+.imagem img {
+    width: 100%;
+    /* Faz a largura da imagem se ajustar à largura do contêiner `.imagem` */
+    margin: 15px;
+    height: auto;
+    /* Mantém a proporção da imagem enquanto a largura se ajusta */
+    display: block;
+    /* Remove qualquer espaçamento inline abaixo da imagem */
+    margin-bottom: 10px;
+    /* Opcional: Adiciona um espaço entre as imagens */
+    object-fit: cover;
+    /* Opcional: Recorta a imagem para preencher o tamanho definido em `height` */
+    /* height: 200px; /* Opcional: Define uma altura fixa para todas as imagens (use com `object-fit`) */
+}
+
+.cenario {
+    width: 90%;
+    margin: 15px;
+    height: auto;
+}
+
+.logo {
+    background-color: #FFF;
+    border-radius: 20px;
+}
+
+
+
+
+
+
 
 /*sobre o jogo*/
 
-.col img {
-    width: 100%;
-    display: inline-block;
-    box-shadow: 0 0 10px #ff032d;
-
-}
-
-.row {
-    .col {
+section {
+    h1 {
+        font-size: 75px;
+        font-family: "Eagle Lake", serif;
         text-align: center;
-        margin: 100px;
-        display: inline-block;
-        
+        margin: 20px;
     }
 
-    .btn1 {
-        margin: 10px 0;
-        background-color: #8a0049;
-        color: rgb(255, 255, 255);
-        font-weight: bold;
-        text-transform: uppercase;
-        text-decoration: none;
-        padding: 10px 20px;
-        margin-left: 45%;
-        border-radius: 25px;
-
-        &:hover {
-            color: #8300cf;
-            transition: 1s;
-        }
-    }
 }
 
-
-
-p {
-    margin: 20px;
-    font-family: "Uncial Antiqua", system-ui;
-}
-
-.cenarios {
-    padding: 30px 0;
-}
-
-
-h2 {
+.sprite {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-shadow: 0 0 40px #8a0049;
+    text-align: justify;
     text-align: center;
-    color: white;
+    padding: 20px;
+    margin: 35px;
+    border-radius: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    transition: 0.5s all;
+
+}
+
+a:hover {
+    color: #9d0000;
+}
+
+.game {
+    background-color: #8a0049;
+    border-radius: 15px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 35px;
+
+
+    &:hover {
+        color: #ffffff;
+        transition: 1s;
+    }
 }
 
 /*contato*/
@@ -217,15 +365,16 @@ label {
     font: 26px "Lilita One", ;
     color: #FFF;
     background: #8a0049;
-    margin: 20px;
+    margin: 25px;
     padding: 10px;
-    line-height: 40px;
+    line-height: 50px;
 
 }
 
 
 
-.btn,button{
+.btn,
+button {
     background: #8a0049;
     color: #FFF;
     text-decoration: none;
@@ -252,222 +401,30 @@ main {
 
 /*mobile*/
 
-   
-@media(max-width: 1200px){
-    /* Estilos gerais para o site */
-header {
-    background-color: rgb(255, 241, 241)
-    color:#fff;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-.header-logo {
-    max-height: 50px;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-
-nav li {
-    margin-left: 30px;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-nav a:hover {
-    color: #ddd;
-}
-
-main {
-    padding: 20px;
-}
-
-section {
-    margin-bottom: 30px;
-     background-color: rgb(27, 0, 0);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.grid {
-    text-align: center;
-}
-
-.grid h1 {
-    font-size: 2.5em;
-    color: #222;
-    margin-bottom: 10px;
-}
-
-.grid p {
-    line-height: 1.6;
-    color: #555;
-}
-
-.cenarios {
-     background-color: rgb(27, 0, 0);
-    padding: 30px 20px;
-}
-
-.cenarios h2 {
-    text-align: center;
-    color: #222;
-    margin-bottom: 20px;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.col {
-    flex-basis: calc(33.33% - 20px);
-    margin-bottom: 20px;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.col img {
-    width: 100%;
-    display: block;
-    height: auto;
-}
-
-.col p {
-    padding: 15px;
-    color: #555;
-    line-height: 1.6;
-}
-
-.btn1 {
-    display: inline-block;
-    background-color: #5cb85c;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 15px;
-    transition: background-color 0.3s ease;
-}
-
-.btn1:hover {
-    background-color: #4cae4c;
-}
-
-.footer {
-    background-color: #fff;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-.footer .container {
-    padding: 0 20px;
-}
-
-.footer img {
-    max-height: 40px;
-    margin-bottom: 10px;
-}
-
-.redes a {
-    color: #fff;
-    font-size: 1.5em;
-    margin: 0 10px;
-    text-decoration: none;
-}
-
-.redes a:hover {
-    color: #ddd;
-}
-
-/* Estilos específicos para dispositivos móveis */
-@media (max-width: 368px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px;
-    }
-
-    .header-logo {
-        margin-bottom: 10px;
-    }
-
-    .header-menu {
-        display: block; /* Mostra o ícone do menu */
-        color: #fff;
-        font-size: 1.5em;
-        cursor: pointer;
-        margin-left: auto; /* Empurra para a direita */
-    }
-
-    nav {
-        display: none; /* Esconde o menu inicialmente em mobile */
+@media(max-width: 420px) {
+    header-logo {
+        height: 400px;
         width: 100%;
-        margin-top: 10px;
+        padding-left: 100px;
     }
 
-    nav.mostrar {
-        display: block; /* Exibe o menu quando a classe 'mostrar' é adicionada */
-    }
 
-    nav ul {
-        flex-direction: column;
-        align-items: flex-start;
-    }
 
-    nav li {
-        margin: 10px 0;
-    }
+    ul {
+        list-style: none;
 
-    .row {
-        flex-direction: column;
-    }
+        li {
+            text-align: center;
 
-    .col {
-        flex-basis: 100%;
-        margin-bottom: 30px;
-    }
+            a {
+                color: #CCC;
+                text-decoration: none;
+                padding: 0px;
+                font-weight: bold;
 
-    .grid h1 {
-        font-size: 2em;
-    }
-
-    .grid p {
-        font-size: 0.9em;
-    }
-
-    .cenarios h2 {
-        font-size: 1.8em;
-    }
-
-    .footer .redes a {
-        font-size: 1.2em;
-        margin: 0 5px;
+            }
+        }
     }
 }
-}
-  
-
 
